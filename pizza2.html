@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Time!</title>
+    <link href="pizza2.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <nav>
+        <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#order">Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#delivery">Delivery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#confirm">Confirmation</a>
+            </li>
+        </ul>
+    </nav>
+    <img src="pizza.jpeg" height="200px" width="400px">
+    <div class="tab-content">
+        <div id="order" class="tab-pane active">
+            <h1>Pizza Time!</h1>
+            <h2>Choose a size, crust, meats, and veggies</h2>
+            <h3>Size</h3>
+            <form id="size">
+                <input type="radio" id="small" name="pizza" value="small">
+                <label for="small">Small: $7</label><br>
+                <input type="radio" id="medium" name="pizza" value="medium">
+                <label for="medium">Medium: $9</label><br>
+                <input type="radio" id="large" name="pizza" value="large">
+                <label for="large">Large: $12</label>
+            </form>
+            <h3>Crust</h3>
+            <form id="crust">
+                <input type="radio" id="thin" name="pizza" value="thin">
+                <label for="thin">Thin</label><br>
+                <input type="radio" id="pan" name="pizza" value="pan">
+                <label for="pan">Pan</label><br>
+                <input type="radio" id="gf" name="pizza" value="gf">
+                <label for="gf">Gluten Free</label><br>
+            </form>
+            <h3>Meats ($1.50 each)</h3>
+            <form id="meat">
+                <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label><br>
+                <input type="checkbox" id="canadian" name="topping" value="canadian">
+                <label for="canadian">Canadian Bacon</label><br>
+                <input type="checkbox" id="sausage" name="topping" value="sausage">
+                <label for="sausage">Sausage</label><br>
+                <input type="checkbox" id="meatball" name="topping" value="meatball">
+                <label for="meatball">Meatball</label><br>
+                <input type="checkbox" id="hamburger" name="topping" value="hamburger">
+                <label for="hamburger">Hamburger</label><br>
+                <input type="checkbox" id="taco" name="topping" value="taco">
+                <label for="taco">Taco Meat</label><br>
+                <input type="checkbox" id="bacon" name="topping" value="bacon">
+                <label for="bacon">Breakfast Bacon</label><br>
+            </form>
+            <h3>Veggies ($1.00 each)</h3>
+            <form id="veggies">
+                <input type="checkbox" id="onion" name="topping" value="onion">
+                <label for="onion">Onion</label><br>
+                <input type="checkbox" id="mushroom" name="topping" value="mushroom">
+                <label for="mushroom">Mushroom</label><br>
+                <input type="checkbox" id="pepper" name="topping" value="pepper">
+                <label for="pepper">Green Pepper</label><br>
+                <input type="checkbox" id="olive" name="topping" value="olive">
+                <label for="olive">Black Olive</label><br>
+                <input type="checkbox" id="tomato" name="topping" value="tomato">
+                <label for="tomato">Tomato</label><br>
+                <input type="checkbox" id="pineapple" name="topping" value="pineapple">
+                <label for="pineapple">Pineapple</label><br>
+                <input type="checkbox" id="basil" name="topping" value="basil">
+                <label for="basil">Basil</label><br>
+                <input type="checkbox" id="spinach" name="topping" value="spinach">
+                <label for="spinach">Spinach</label><br>
+                <input type="checkbox" id="garlic" name="topping" value="garlic">
+                <label for="garlic">Garlic</label><br>
+            </form>
+            <button id="next">Go To Delivery Screen</button>
+        </div>
+        <div id="delivery" class="tab-pane">
+            <h1>Enter Delivery Information</h1>
+            <form id="deliver">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address"><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="text" id="phone" name="phone"><br>
+            </form>
+            <button id="submit" onclick="document.write(#size + #crust + #meat + #veggies + #deliver)">Go To Confirmation Screen</button>
+        </div>
+        <div id="confirm" class="tab-pane">
+            <form id="display">
+                <p id="confirmation"></p>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="pizza2.js"></script>
+</body>
+</html>
